@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Діма & Аня — Темне Продовження</title>
+    
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Драматичне продовження історії Діми та Ані. Коли світло згасає, починається нова глава.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Local CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Loading Preloader Screen (Dark Theme) -->
+    <div id="preloader" class="preloader" style="background-color: #070708;">
+        <div class="preloader-content">
+            <h1 class="preloader-title" style="color: #EF4444; text-shadow: 0 0 15px rgba(239, 68, 68, 0.25);">Темне продовження</h1>
+            <div class="preloader-divider" style="background-color: #EF4444;"></div>
+            <p class="preloader-subtitle" style="color: #94A3B8;">Іноді найкрасивіші історії мають найтемніший фінал...</p>
+        </div>
+    </div>
+
+    <!-- Rain Overlay container -->
+    <div class="rain-overlay" id="rain-overlay"></div>
+
+    <!-- Fog Overlay container -->
+    <div class="fog-overlay">
+        <div class="fog-cloud"></div>
+    </div>
+
+    <!-- Background Music Audio Loop (Shared) -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="assets/audio/background.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Audio Control Button -->
+    <button id="music-toggle" class="music-toggle-btn" aria-label="Увімкнути музику">
+        <span class="music-wave-container">
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+        </span>
+        <span class="music-toggle-text">Play music</span>
+    </button>
+
+    <!-- Navigation Header (Dark) -->
+    <header class="main-header" id="navbar">
+        <div class="header-container">
+            <a href="index.html" class="nav-logo" style="color: #EF4444 !important;">Діма & Аня</a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Романтична історія</a>
+                <a href="#fissures" class="nav-link">Тріщини</a>
+                <a href="#stranger" class="nav-link">Незнайомець</a>
+                <a href="#betrayal" class="nav-link">Зрада</a>
+                <a href="#wedding" class="nav-link">Весілля</a>
+                <a href="#family" class="nav-link">Сім'я</a>
+            </nav>
+            
+            <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Меню">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Dark Hero Section -->
+    <section class="dark-hero" id="hero">
+        <div class="dark-hero-content">
+            <span class="dark-hero-tag animate-fade-in-up">Частина 2</span>
+            <h1 class="dark-hero-title animate-delay-1">Тіні минулого</h1>
+            <p class="dark-hero-subtitle animate-delay-2">Колись ця історія починалася зі світла. Але не кожне світло горить вічно.</p>
+            <div class="hero-buttons animate-delay-2">
+                <a href="#fissures" class="btn btn-dark-primary">Дивитись продовження</a>
+                <a href="index.html" class="btn btn-dark-outline">Назад до світла</a>
+            </div>
+        </div>
+        <a href="#fissures" class="scroll-down-indicator" aria-label="Читати далі">
+            <svg class="dark-scroll-down-arrow" viewBox="0 0 24 24">
+                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+            </svg>
+        </a>
+    </section>
+
+    <!-- Dark Continuation Timeline -->
+    <section class="dark-timeline-section" style="padding: 6rem 0 10rem 0;">
+        <div class="container">
+            
+            <div class="dark-timeline-wrapper">
+
+                <!-- Scene 1: Перші тріщини -->
+                <div class="dark-scene-card reveal-on-scroll" id="fissures">
+                    <div class="dark-scene-media">
+                        <img src="assets/images/fissures.png" alt="Перші тріщини" loading="lazy">
+                    </div>
+                    <div class="dark-scene-info">
+                        <span class="dark-scene-num">Сцена I</span>
+                        <h2 class="dark-scene-title">Перші тріщини</h2>
+                        <p class="dark-scene-text">
+                            Діма помічав дрібниці: холодні відповіді, порожній погляд, тишу там, де раніше було тепло. Повідомлення без відповіді, порожні вечори, мовчазні стіни кімнати, що колись світилася сміхом. Історія почала тріщати по швах, непомітно, але безповоротно.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="red-gold-accent"></div>
+
+                <!-- Scene 2: Незнайомець -->
+                <div class="dark-scene-card reveal-on-scroll" id="stranger">
+                    <div class="dark-scene-media">
+                        <img src="assets/images/stranger.png" alt="Незнайомець" loading="lazy">
+                    </div>
+                    <div class="dark-scene-info">
+                        <span class="dark-scene-num">Сцена II</span>
+                        <h2 class="dark-scene-title">Незнайомець</h2>
+                        <p class="dark-scene-text">
+                            У її житті з’явився інший. Новий чоловік, афроамериканець, приніс із собою нові розмови, нові таємниці та нові почуття, які більше не належали Дімі. Це не було жартом — це став холодний, невідворотний поворот долі, який назавжди розірвав зв'язок Діми та Ані.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="red-gold-accent"></div>
+
+                <!-- Scene 3: Зрада -->
+                <div class="dark-scene-card reveal-on-scroll" id="betrayal">
+                    <div class="dark-scene-media">
+                        <!-- Line-art Vector: Shattered heart geometry in rain -->
+                        <svg viewBox="0 0 100 100" class="silhouette-svg">
+                            <!-- Shattered Heart Path -->
+                            <path d="M 50 35 C 50 35, 43 23, 30 25 C 18 27, 18 42, 33 55 L 50 72 L 53 69 L 45 61 L 55 53 L 42 45 L 50 35 Z" stroke="#EF4444" stroke-width="2"/>
+                            <path d="M 50 35 C 50 35, 57 23, 70 25 C 82 27, 82 42, 67 55 L 55 67" stroke="#EF4444" stroke-width="2"/>
+                            <!-- Rain drops cutting through heart -->
+                            <line x1="20" y1="10" x2="10" y2="40" stroke="#334155" stroke-width="1"/>
+                            <line x1="45" y1="5" x2="35" y2="35" stroke="#334155" stroke-width="1"/>
+                            <line x1="80" y1="15" x2="70" y2="45" stroke="#334155" stroke-width="1"/>
+                            <line x1="60" y1="60" x2="50" y2="90" stroke="#334155" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <div class="dark-scene-info">
+                        <span class="dark-scene-num">Сцена III</span>
+                        <h2 class="dark-scene-title">Зрада</h2>
+                        <p class="dark-scene-text">
+                            Діма дізнався правду. Зрада була тихою, але оглушливою. В один момент усі клятви, весільні мрії та спільні спогади перетворилися на порох під холодним дощем розчарування. Тепер замість тепла залишилася тільки порожнеча та розбите серце.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="red-gold-accent"></div>
+
+                <!-- Scene 4: Нове весілля -->
+                <div class="dark-scene-card reveal-on-scroll" id="wedding">
+                    <div class="dark-scene-media">
+                        <img src="assets/images/dark_wedding.png" alt="Нове весілля" loading="lazy">
+                    </div>
+                    <div class="dark-scene-info">
+                        <span class="dark-scene-num">Сцена IV</span>
+                        <h2 class="dark-scene-title">Нове весілля</h2>
+                        <p class="dark-scene-text">
+                            Весільні дзвони знову пролунали. Але цього разу не для Діми. Аня вийшла заміж за нового обранця у тому ж залі, проте атмосфера змінилася: замість ніжності та світла панувала холодна, строга краса та велич нового вибору.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="red-gold-accent"></div>
+
+                <!-- Scene 5: Сім дітей -->
+                <div class="dark-scene-card reveal-on-scroll" id="family">
+                    <div class="dark-scene-media" style="gap: 10px; background: transparent; border: none; box-shadow: none;">
+                        <div style="width: 50%; height: 100%; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.03);">
+                            <img src="assets/images/seven_babies.png" alt="Сім немовлят" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="width: 50%; height: 100%; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.03);">
+                            <img src="assets/images/seven_kids.png" alt="Сім дітей" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="dark-scene-info">
+                        <span class="dark-scene-num">Сцена V</span>
+                        <h2 class="dark-scene-title">Нова історія</h2>
+                        <p class="dark-scene-text">
+                            Після цього почалося абсолютно нове життя. Інша сім’я, інший дім. Сім маленьких дитячих голосів наповнили коридори нового будинку Ані. І поки Діма залишився у спогадах, її нова життєва реальність стала зовсім іншою, великою та гамірною.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="red-gold-accent"></div>
+
+                <!-- Scene 6: Діма після всього -->
+                <div class="dark-scene-card reveal-on-scroll" id="dima-alone">
+                    <div class="dark-scene-media">
+                        <!-- Line-art Vector: Lone figure under a lamp light in rain -->
+                        <svg viewBox="0 0 100 100" class="silhouette-svg">
+                            <!-- Lamp outline -->
+                            <path d="M 20 85 L 20 20 L 35 20 M 35 20 L 35 25" stroke="#475569" stroke-width="2"/>
+                            <polygon points="30,25 40,25 38,32 32,32" stroke="#475569" stroke-width="1.5"/>
+                            <!-- Light cone -->
+                            <polygon points="35,32 15,85 55,85" fill="none" stroke="#EF4444" stroke-dasharray="3,3" stroke-width="1"/>
+                            <!-- Silhouette of single figure standing -->
+                            <circle cx="35" cy="55" r="3" stroke="#C5A880" stroke-width="1.5"/>
+                            <line x1="35" y1="58" x2="35" y2="75" stroke="#C5A880" stroke-width="1.5"/>
+                            <line x1="32" y1="85" x2="38" y2="85" stroke="#475569" stroke-width="2"/>
+                            <!-- Rain lines -->
+                            <line x1="75" y1="10" x2="65" y2="40" stroke="#334155" stroke-width="1"/>
+                            <line x1="90" y1="30" x2="80" y2="60" stroke="#334155" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <div class="dark-scene-info">
+                        <span class="dark-scene-num">Фінал</span>
+                        <h2 class="dark-scene-title">Наодинці зі спогадами</h2>
+                        <p class="dark-scene-text">
+                            А Діма залишився там, де все починалося — серед спогадів, які вже нікому не були потрібні. Він стоїть під дощем минулого, розуміючи: іноді найкрасивіші історії кохання мають найтемніший і найхолодніший фінал.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Dark CTA Actions -->
+            <div class="text-center" style="margin-top: 8rem;">
+                <button id="scroll-to-top" class="btn btn-dark-primary btn-round" style="margin-right: 1.5rem;" aria-label="Повернутися нагору">
+                    Повернутися нагору
+                </button>
+                <a href="index.html" class="btn btn-dark-outline btn-round" style="margin-right: 1.5rem;">Переграти історію</a>
+                <button class="btn btn-dark-outline btn-round btn-disabled" aria-disabled="true">Альтернативний фінал 🔒</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer (Dark) -->
+    <footer class="main-footer">
+        <div class="container text-center">
+            <p class="footer-logo" style="color: #EF4444 !important;">Діма & Аня</p>
+            <p class="footer-love">Made with love for Dima & Anya</p>
+            <p class="footer-copy">&copy; 2026. Усі права збережено.</p>
+        </div>
+    </footer>
+
+    <!-- Local JS Link -->
+    <script src="script.js"></script>
+</body>
+</html>

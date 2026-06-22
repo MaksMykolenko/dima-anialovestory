@@ -148,4 +148,20 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // 8. Rain Simulation (for continuation.html)
+    const rainContainer = document.getElementById('rain-overlay');
+    if (rainContainer) {
+        const dropCount = 70;
+        for (let i = 0; i < dropCount; i++) {
+            const drop = document.createElement('div');
+            drop.classList.add('rain-drop');
+            // Randomize position, speed, and animation delay for realism
+            drop.style.left = `${Math.random() * 100}%`;
+            drop.style.top = `${Math.random() * -100}px`;
+            drop.style.animationDelay = `${Math.random() * 2}s`;
+            drop.style.animationDuration = `${0.7 + Math.random() * 0.5}s`;
+            rainContainer.appendChild(drop);
+        }
+    }
 });

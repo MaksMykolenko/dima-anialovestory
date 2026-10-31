@@ -1617,3 +1617,543 @@ section {
     }
 }
 
+/* ==========================================================================
+   15. Love Story Сергія і Ані (Serega Edition) Styles
+   ========================================================================== */
+
+/* Theme & Accents */
+.serega-theme {
+    background-color: var(--color-ivory);
+}
+
+.serega-theme .hero-overlay-serega {
+    background: linear-gradient(180deg, 
+        rgba(15, 23, 42, 0.45) 0%, 
+        rgba(15, 23, 42, 0.70) 50%, 
+        rgba(15, 23, 42, 0.90) 100%);
+}
+
+.hero-tag-badge {
+    display: inline-block;
+    padding: 0.4rem 1.4rem;
+    background: rgba(197, 168, 128, 0.2);
+    border: 1px solid rgba(197, 168, 128, 0.5);
+    color: var(--color-champagne);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.logo-truck-icon {
+    display: inline-block;
+    margin-right: 0.35rem;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.nav-link-alt {
+    color: var(--color-gold-dark) !important;
+    background: rgba(197, 168, 128, 0.12);
+    padding: 0.35rem 0.9rem !important;
+    border-radius: 20px;
+    border: 1px solid rgba(197, 168, 128, 0.3);
+    transition: var(--transition-fast) !important;
+}
+
+.nav-link-alt:hover {
+    background: var(--color-gold) !important;
+    color: var(--color-navy) !important;
+}
+
+.btn-gazel-horn {
+    background: linear-gradient(135deg, #F59E0B, #D97706);
+    color: #FFFFFF;
+    border: none;
+    padding: 0.95rem 2.2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    box-shadow: 0 4px 20px rgba(245, 158, 11, 0.35);
+}
+
+.btn-gazel-horn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 30px rgba(245, 158, 11, 0.5);
+    color: #FFFFFF;
+}
+
+/* Stats Grid */
+.gazel-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 4.5rem;
+}
+
+.stat-card {
+    background: var(--color-white);
+    padding: 2.5rem 1.5rem;
+    border-radius: 16px;
+    border: 1px solid rgba(197, 168, 128, 0.2);
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-smooth);
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-medium);
+    border-color: var(--color-gold);
+}
+
+.stat-icon {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.stat-number {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-navy);
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.95rem;
+    color: var(--color-muted);
+}
+
+/* Instagram Showcase Section */
+.comments-section {
+    padding: 8rem 0;
+    background: linear-gradient(180deg, var(--color-ivory) 0%, #F5EFE6 50%, var(--color-ivory) 100%);
+    position: relative;
+}
+
+.insta-mockup-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    align-items: center;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.insta-card {
+    background: #FFFFFF;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 15px 45px rgba(15, 23, 42, 0.08);
+    overflow: hidden;
+}
+
+.insta-card-header {
+    display: flex;
+    align-items: center;
+    padding: 0.9rem 1.2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.insta-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 0.9rem;
+    border: 2px solid var(--color-gold);
+    flex-shrink: 0;
+}
+
+.insta-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.insta-user-info {
+    flex-grow: 1;
+}
+
+.insta-username {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.2;
+}
+
+.insta-location {
+    font-size: 0.78rem;
+    color: #6B7280;
+}
+
+.insta-dots {
+    color: #9CA3AF;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.insta-card-image-box {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #000;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.insta-main-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.insta-like-heart-anim {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 5rem;
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.insta-like-heart-anim.pop {
+    transform: translate(-50%, -50%) scale(1.3);
+    opacity: 1;
+}
+
+.insta-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1.2rem 0.5rem;
+}
+
+.insta-action-left {
+    display: flex;
+    gap: 1.1rem;
+    align-items: center;
+}
+
+.insta-action-btn {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: transform 0.2s ease;
+}
+
+.insta-action-btn:hover {
+    transform: scale(1.15);
+}
+
+.insta-heart-btn .heart-icon {
+    fill: none;
+    stroke: #1F2937;
+    stroke-width: 2;
+    transition: all 0.2s ease;
+}
+
+.insta-heart-btn.active .heart-icon {
+    fill: #EF4444;
+    stroke: #EF4444;
+}
+
+.insta-likes-row {
+    padding: 0.2rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.insta-comments-list {
+    padding: 0.6rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.insta-comment-item {
+    font-size: 0.88rem;
+    line-height: 1.4;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.comment-author {
+    font-weight: 700;
+    color: #111827;
+    flex-shrink: 0;
+}
+
+.comment-text {
+    flex-grow: 1;
+    color: #1F2937;
+}
+
+.comment-heart {
+    font-size: 0.8rem;
+    color: #9CA3AF;
+    cursor: pointer;
+}
+
+.highlight-comment {
+    background: rgba(239, 68, 68, 0.06);
+    padding: 0.5rem 0.7rem;
+    border-radius: 8px;
+    border-left: 3px solid #EF4444;
+}
+
+.insta-post-date {
+    padding: 0.7rem 1.2rem 1.2rem;
+    font-size: 0.75rem;
+    color: #9CA3AF;
+    letter-spacing: 0.5px;
+}
+
+/* Explanation Card */
+.insta-explanation-card {
+    background: var(--color-white);
+    padding: 3.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(197, 168, 128, 0.25);
+    box-shadow: var(--shadow-medium);
+}
+
+.exclusive-badge {
+    display: inline-block;
+    padding: 0.35rem 1.1rem;
+    background: rgba(197, 168, 128, 0.15);
+    color: var(--color-gold-dark);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.insta-explanation-card h3 {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    color: var(--color-navy);
+    margin-bottom: 1.2rem;
+}
+
+.insta-explanation-card p {
+    font-size: 1.05rem;
+    color: var(--color-muted);
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+}
+
+.quote-signature-box {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 2rem;
+    padding-top: 1.8rem;
+    border-top: 1px solid rgba(197, 168, 128, 0.2);
+}
+
+.quote-signature-avatar {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--color-gold);
+}
+
+.quote-signature-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quote-signature-box strong {
+    display: block;
+    color: var(--color-navy);
+    font-size: 1rem;
+}
+
+.quote-signature-box p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--color-gold-dark);
+}
+
+/* Horn Section */
+.horn-section {
+    padding: 7rem 0;
+    background-color: var(--color-ivory);
+    position: relative;
+    border-top: 1px solid rgba(197, 168, 128, 0.15);
+    border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+}
+
+.horn-interactive-box {
+    background: #FFFFFF;
+    border: 1px solid rgba(197, 168, 128, 0.3);
+    border-radius: 24px;
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: var(--shadow-medium);
+}
+
+.mega-horn-button {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #F59E0B, #D97706);
+    border: 6px solid #FEF3C7;
+    box-shadow: 0 10px 40px rgba(245, 158, 11, 0.4);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    outline: none;
+    margin-bottom: 1.5rem;
+}
+
+.mega-horn-button:hover {
+    transform: scale(1.06);
+    box-shadow: 0 15px 50px rgba(245, 158, 11, 0.55);
+}
+
+.mega-horn-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 5px 20px rgba(245, 158, 11, 0.4);
+}
+
+.horn-icon-big {
+    font-size: 3rem;
+    margin-bottom: 0.2rem;
+}
+
+.horn-btn-title {
+    font-family: var(--font-sans);
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+.horn-btn-sub {
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.85);
+    text-transform: uppercase;
+}
+
+.horn-status-text {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--color-navy);
+    min-height: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.horn-status-text.horn-pulse {
+    animation: textFlash 0.5s ease-out;
+}
+
+@keyframes textFlash {
+    0% { transform: scale(1.1); color: #D97706; }
+    100% { transform: scale(1); color: var(--color-navy); }
+}
+
+.gazel-dashboard-metrics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.metric-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.metric-val {
+    font-family: var(--font-serif);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-navy);
+    line-height: 1;
+}
+
+.metric-unit {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-gold-dark);
+    margin-bottom: 0.2rem;
+}
+
+.metric-name {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+}
+
+.metric-divider {
+    width: 1px;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.08);
+}
+
+/* Story Switch Section */
+.story-switch-section {
+    padding: 7rem 0;
+    background: var(--color-white);
+    position: relative;
+    border-top: 1px solid rgba(197, 168, 128, 0.15);
+}
+
+/* Responsive adjustments for Serega page */
+@media (max-width: 992px) {
+    .gazel-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .insta-mockup-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .gazel-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    .gazel-dashboard-metrics {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .metric-divider {
+        display: none;
+    }
+    .insta-explanation-card {
+        padding: 2rem 1.5rem;
+    }
+}
+
+

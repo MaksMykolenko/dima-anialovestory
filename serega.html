@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Story Сергія і Ані — Романтика Синьої Газелі</title>
+    
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Історія кохання Сергія та Ані: від щирої посмішки за кермом синьої Газелі до підкорення серця. Кохання, народжене на трасі.">
+    <meta name="keywords" content="Сергій і Аня, Газеліст Серьога, Love Story, Романтика Газелі, Весілля Сергій Аня">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Local CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="serega-theme">
+
+    <!-- Loading Preloader Screen -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <h1 class="preloader-title">Сергій & Аня</h1>
+            <div class="preloader-divider"></div>
+            <p class="preloader-subtitle">Швидкість, романтика, синя Газель і справжнє кохання...</p>
+        </div>
+    </div>
+
+    <!-- Background Music Audio Loop -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="assets/audio/background.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Audio Control Button -->
+    <button id="music-toggle" class="music-toggle-btn" aria-label="Увімкнути музику">
+        <span class="music-wave-container">
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+        </span>
+        <span class="music-toggle-text">Play music</span>
+    </button>
+
+    <!-- Navigation Header -->
+    <header class="main-header" id="navbar">
+        <div class="header-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-truck-icon">🚚</span> Сергій & Аня
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#history" class="nav-link">Історія</a>
+                <a href="#timeline" class="nav-link">Хронологія</a>
+                <a href="#comments" class="nav-link">Instagram Хайп</a>
+                <a href="#gallery" class="nav-link">Галерея</a>
+                <a href="#about" class="nav-link">Про них</a>
+                <a href="#horn" class="nav-link">Клаксон</a>
+                <a href="index.html" class="nav-link nav-link-alt" title="Перейти до версії Діми">Історія Діми</a>
+            </nav>
+            
+            <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Меню">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-parallax-bg" style="background-image: url('assets/images/serhiy_driver.png');"></div>
+        <div class="hero-overlay hero-overlay-serega"></div>
+        <div class="hero-content">
+            <div class="hero-tag-badge animate-fade-in-up">Офіційна Love Story • 2026</div>
+            <h1 class="hero-title animate-fade-in-up">Сергій & Аня</h1>
+            <p class="hero-subtitle animate-delay-1">Історія кохання, яка почалась із щирої посмішки у вікні синьої Газелі та стала найміцнішим союзом на всіх дорогах життя</p>
+            <div class="hero-buttons animate-delay-2">
+                <a href="#history" class="btn btn-primary">Дивитись історію</a>
+                <a href="#gallery" class="btn btn-outline">Галерея рейсів</a>
+                <button class="btn btn-gazel-horn" id="horn-btn-hero">Посигналити 📢</button>
+            </div>
+        </div>
+        <a href="#history" class="scroll-down-indicator" aria-label="Читати далі">
+            <svg class="scroll-down-arrow" viewBox="0 0 24 24">
+                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+            </svg>
+        </a>
+    </section>
+
+    <!-- Section: Наша історія -->
+    <section class="history-section reveal-on-scroll" id="history">
+        <div class="container text-center">
+            <span class="section-label">Наша Історія</span>
+            <h2 class="section-title">Як швидкість зустріла ніжність</h2>
+            <p class="history-lead-text">
+                Коли Сергій уперше натиснув на педаль газу своєї легендарної синьої Газелі, він і уявити не міг, що головним вантажем у його житті стане щастя Ані. Забудьте про нудні побачення при свічках — справжні почуття перевіряються трасою, запахом свіжого асфальту, щирим сміхом у кабіні та надійним чоловічим плечем у картатій сорочці.
+            </p>
+            <div class="editorial-divider"></div>
+
+            <!-- Stats / Highlights Grid -->
+            <div class="gazel-stats-grid reveal-on-scroll">
+                <div class="stat-card">
+                    <div class="stat-icon">🚚</div>
+                    <div class="stat-number">350 000+</div>
+                    <div class="stat-label">Кілометрів кохання</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">✌️</div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Спокою та впевненості</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🥔</div>
+                    <div class="stat-number">1.5 тони</div>
+                    <div class="stat-label">Вантажопідйомність картоплі</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">❤️</div>
+                    <div class="stat-number">Назавжди</div>
+                    <div class="stat-label">Одне серце на двох</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Timeline (Хронологія) -->
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <span class="section-label text-center d-block">Наш шлях</span>
+            <h2 class="section-title text-center">Хроніка незабутніх рейсів</h2>
+            
+            <div class="timeline-wrapper">
+                <div class="timeline-line"></div>
+
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="timeline-img-box">
+                        <img src="assets/images/serhiy_driver.png" alt="Сергій за кермом синьої Газелі" loading="lazy">
+                    </div>
+                    <div class="timeline-content-card">
+                        <span class="timeline-tag">Початок шляху</span>
+                        <h3>Посмішка водія синьої Газелі</h3>
+                        <p>Все почалося зі щирого погляду та фірмового жесту «Peace». Сергій показав Ані, що справжній чоловік впевнено тримає кермо долі. Синя Газель стала не просто транспортом, а затишним місцем перших розмов, сміху та відчуття, що поруч — надійна опора.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="timeline-img-box">
+                        <img src="assets/images/serhiy_gazel.png" alt="Сергій у кузові з аварійним трикутником" loading="lazy">
+                    </div>
+                    <div class="timeline-content-card">
+                        <span class="timeline-tag">Брутальний затишок</span>
+                        <h3>Аварійна зупинка заради кохання</h3>
+                        <p>Дерев’яні борти кузова, зручний диванчик, картата сорочка і трикутник аварійної зупинки. Сергій знає: іноді потрібно зупинитись посеред бурхливого світу, щоб подивитися в очі Ані та зрозуміти, що всі дороги ведуть лише до неї.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="timeline-img-box">
+                        <img src="assets/images/garden.png" alt="Аня на городі з картоплею" loading="lazy">
+                    </div>
+                    <div class="timeline-content-card">
+                        <span class="timeline-tag">Спільне господарство</span>
+                        <h3>З траси — прямо на город до Ані</h3>
+                        <p>Поки інші розказували казки, Сергій підкотив Газель прямо до городу. За пів години всі відра з картоплею були дбайливо погружені в кузов. Аня зрозуміла: романтика з віршами — це добре, але справжній господар із вантажівкою — це кохання на все життя.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="timeline-img-box">
+                        <img src="assets/images/ring.png" alt="Обручка вірності" loading="lazy">
+                    </div>
+                    <div class="timeline-content-card">
+                        <span class="timeline-tag">Остаточний вибір</span>
+                        <h3>Вона сказала «Так» у кабіні Газелі</h3>
+                        <p>Замість довгих промов — золота обручка та щире запитання під гуркіт надійного мотора. Аня сказала «Так», бо знає: попереду тисячі кілометрів спільного щастя, де на кожному світлофорі горить лише зелене світло.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Instagram Хайп & Коментарі -->
+    <section class="comments-section reveal-on-scroll" id="comments">
+        <div class="container">
+            <span class="section-label text-center d-block">Глас Народу</span>
+            <h2 class="section-title text-center">Instagram-шаленство навколо Сергія</h2>
+            <p class="history-lead-text text-center" style="max-width: 700px; margin: 0 auto 3rem;">
+                Коли Сергій виклав фото в кузові, Instagram буквально закипів. Друзі та шанувальники не стримували емоцій, але серце Серьоги б’ється лише для однієї королеви.
+            </p>
+
+            <div class="insta-mockup-wrapper">
+                
+                <!-- Instagram Card Component -->
+                <div class="insta-card">
+                    <!-- Insta Header -->
+                    <div class="insta-card-header">
+                        <div class="insta-avatar">
+                            <img src="assets/images/serhiy_portrait.png" alt="gazelist_serega avatar">
+                        </div>
+                        <div class="insta-user-info">
+                            <span class="insta-username">gazelist_serega</span>
+                            <span class="insta-location">Траса Київ — Чоп • В рейсі</span>
+                        </div>
+                        <div class="insta-dots">•••</div>
+                    </div>
+
+                    <!-- Insta Image Frame -->
+                    <div class="insta-card-image-box">
+                        <img src="assets/images/serhiy_gazel.png" alt="Сергій у кузові Газелі" class="insta-main-pic">
+                        <div class="insta-like-heart-anim" id="instaHeart">❤️</div>
+                    </div>
+
+                    <!-- Insta Actions Bar -->
+                    <div class="insta-actions">
+                        <div class="insta-action-left">
+                            <button class="insta-action-btn insta-heart-btn" id="instaHeartBtn" aria-label="Поставити лайк">
+                                <svg viewBox="0 0 24 24" width="24" height="24" class="heart-icon">
+                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                </svg>
+                            </button>
+                            <span class="insta-action-btn">💬</span>
+                            <span class="insta-action-btn">↗️</span>
+                        </div>
+                        <div class="insta-action-right">
+                            <span class="insta-action-btn">🔖</span>
+                        </div>
+                    </div>
+
+                    <!-- Insta Likes Counter -->
+                    <div class="insta-likes-row">
+                        <span id="instaLikesCount">Вподобано _tarasiks та ще 14 іншим</span>
+                    </div>
+
+                    <!-- Insta Real Comments List -->
+                    <div class="insta-comments-list">
+                        
+                        <div class="insta-comment-item">
+                            <span class="comment-author">noyvash</span>
+                            <span class="comment-text">Ніхуя секас мой малиш❤️❤️❤️❤️❤️💋💋💋💋🥰🥰🥰💖</span>
+                            <span class="comment-heart">🤍</span>
+                        </div>
+
+                        <div class="insta-comment-item">
+                            <span class="comment-author">noyvash</span>
+                            <span class="comment-text">🔥</span>
+                            <span class="comment-heart">🤍</span>
+                        </div>
+
+                        <div class="insta-comment-item highlight-comment">
+                            <span class="comment-author">danylo_kostiv</span>
+                            <span class="comment-text">бля шо за красавчик та ти шо бля я б його трахнув в його попку 🔥🔥🔥❤️❤️❤️😍😍😍</span>
+                            <span class="comment-heart">❤️</span>
+                        </div>
+
+                    </div>
+
+                    <div class="insta-post-date">20 ЛИПНЯ 2023 • ПЕРЕГЛЯНУТИ ВСІ 14 КОМЕНТАРІВ</div>
+                </div>
+
+                <!-- Explanation / Humor Card -->
+                <div class="insta-explanation-card">
+                    <span class="exclusive-badge">Ексклюзивний факт</span>
+                    <h3>Чому саме Аня?</h3>
+                    <p>
+                        Поки Данило Костів та noyvash засипали коментарі Сергія компліментами небаченої пристрасті, Сергій залишався непохитним.
+                    </p>
+                    <p>
+                        «Краса приваблює багатьох, але справжня любов сідає поруч на пасажирське сидіння і вмикає твою улюблену пісню», — каже Сергій.
+                    </p>
+                    <div class="quote-signature-box">
+                        <div class="quote-signature-avatar">
+                            <img src="assets/images/serhiy_portrait.png" alt="Сергій">
+                        </div>
+                        <div>
+                            <strong>Сергій (Газеліст)</strong>
+                            <p>Офіційний обранець Ані</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Photo Gallery -->
+    <section class="gallery-section reveal-on-scroll" id="gallery">
+        <div class="container">
+            <span class="section-label text-center d-block">Фотогалерея</span>
+            <h2 class="section-title text-center">Хроніка швидкості та почуттів</h2>
+            
+            <div class="gallery-grid">
+                
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item reveal-on-scroll size-vertical">
+                    <img src="assets/images/serhiy_driver.png" alt="Сергій за кермом" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h3>Король кабіни</h3>
+                            <p>Фірмовий спокій та посмішка ✌️</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item reveal-on-scroll">
+                    <img src="assets/images/serhiy_gazel.png" alt="Сергій у кузові" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h3>Філософ у кузові</h3>
+                            <p>Аварійний знак для палких сердець</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item reveal-on-scroll">
+                    <img src="assets/images/garden.png" alt="Аня на городі" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h3>Господарська муза</h3>
+                            <p>Урожай, який підкорив Газель</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item reveal-on-scroll">
+                    <img src="assets/images/serhiy_post_full.png" alt="Оригінальний пост" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h3>Instagram-Легенда</h3>
+                            <p>Скріншот, що увійшов в історію</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item reveal-on-scroll size-large">
+                    <img src="assets/images/ring.png" alt="Обручка вірності" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h3>Вона сказала «Так»</h3>
+                            <p>Обручка вічної вірності</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Про них (Сергій & Аня) -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <span class="section-label text-center d-block">Про них</span>
+            <h2 class="section-title text-center">Два серця — одна дорога</h2>
+            
+            <div class="about-cards-grid">
+                
+                <!-- Serhiy Card -->
+                <div class="about-card reveal-on-scroll">
+                    <div class="card-bg-overlay"></div>
+                    <div class="card-content">
+                        <span class="card-role">Сергій (Газеліст)</span>
+                        <h3 class="card-name">Впевнений, щирий, непереможний</h3>
+                        <p class="card-description">
+                            Він завжди знає точний маршрут і ніколи не скидає обертів перед труднощами. Його впевненість у картатій сорочці та фірмові шльопки за кермом заряджають спокоєм, а почуття гумору розганяє будь-яку негоду. Для Ані Сергій — це надійна фортеця, яка може рухатись зі швидкістю 90 км/год.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Anya Card -->
+                <div class="about-card reveal-on-scroll">
+                    <div class="card-bg-overlay"></div>
+                    <div class="card-content">
+                        <span class="card-role">Аня</span>
+                        <h3 class="card-name">Ніжна, мудра, чарівна</h3>
+                        <p class="card-description">
+                            Дівчина, яка знає ціну справжнім чоловічим вчинкам. Її ніжність і сяюча посмішка перетворюють будь-який складний рейс на сонячну подорож. Вона — головна пасажирка та муза Сергія, заради якої він готовий їхати хоч на край світу і назад.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Інтерактивний клаксон і Газель Power -->
+    <section class="horn-section reveal-on-scroll" id="horn">
+        <div class="container text-center">
+            <span class="section-label">Інтерактивна станція водія</span>
+            <h2 class="section-title">Газель Power & Гудок кохання</h2>
+            <p class="history-lead-text" style="max-width: 650px; margin: 0 auto 2.5rem;">
+                Натисніть на фірмовий клаксон синьої Газелі, щоб розбудити сусідів та привітати Сергія і Аню!
+            </p>
+
+            <div class="horn-interactive-box">
+                <button class="mega-horn-button" id="megaHornBtn" aria-label="Посигналити">
+                    <span class="horn-icon-big">📢</span>
+                    <span class="horn-btn-title">БІ-БІП!</span>
+                    <span class="horn-btn-sub">Клаксон Синьої Газелі</span>
+                </button>
+
+                <div class="horn-status-text" id="hornStatus">Натисни, щоб відчути звук мотора!</div>
+
+                <!-- Speedometer / Power meters -->
+                <div class="gazel-dashboard-metrics">
+                    <div class="metric-item">
+                        <span class="metric-val" id="metricSpeed">90</span>
+                        <span class="metric-unit">км/год</span>
+                        <span class="metric-name">Швидкість почуттів</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-val">100%</span>
+                        <span class="metric-unit">Газель-сила</span>
+                        <span class="metric-name">Сумісність пари</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-val" id="hornCountVal">0</span>
+                        <span class="metric-unit">гудків</span>
+                        <span class="metric-name">Привітань відправлено</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Love Quote -->
+    <section class="quote-section reveal-on-scroll">
+        <div class="quote-bg-decor"></div>
+        <div class="container text-center">
+            <div class="quote-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M14,17H17L19,13V7H13V13H16M6,17H9L11,13V7H5V13H8L6,17Z" />
+                </svg>
+            </div>
+            <blockquote class="love-quote">
+                «Справжнє кохання — це коли ти їдеш на Газелі зі швидкістю 90 км/год, але твоє серце мчить до неї набагато швидше.»
+            </blockquote>
+            <div class="quote-author">Сергій & Аня</div>
+        </div>
+    </section>
+
+    <!-- Section: Navigation to other stories -->
+    <section class="story-switch-section reveal-on-scroll">
+        <div class="container text-center">
+            <span class="transition-tag">Паралельний всесвіт</span>
+            <h2 class="transition-title">А що ж сталося з Дімою?</h2>
+            <p class="transition-text">
+                Поки Сергій та Аня насолоджуються швидкістю та картоплею, ви можете поглянути на альтернативну романтичну історію або її драматичний фінал.
+            </p>
+            <div class="transition-button-wrap" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <a href="index.html" class="btn btn-outline" style="border-color: var(--color-gold); color: var(--color-navy);">Історія Діми та Ані</a>
+                <a href="continuation.html" class="btn btn-dark-transition">Темне продовження 🌧️</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Section -->
+    <section class="final-section reveal-on-scroll" id="final">
+        <div class="final-bg" style="background-image: url('assets/images/serhiy_driver.png');"></div>
+        <div class="final-overlay hero-overlay-serega"></div>
+        <div class="final-content text-center">
+            <h2 class="final-title">Це тільки початок їхнього великого рейсу...</h2>
+            <p class="final-subtitle">Попереду тисячі кілометрів, вірність, щирий сміх та надійне плече Сергія.</p>
+            <button id="scroll-to-top" class="btn btn-primary btn-round" aria-label="Повернутися нагору">
+                Повернутися нагору ↑
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container text-center">
+            <p class="footer-logo">🚚 Сергій & Аня</p>
+            <p class="footer-love">Made with love for Serhiy & Anya • Gazel Edition</p>
+            <p class="footer-copy">&copy; 2026. Синя Газель на ходу. Усі права захищено.</p>
+        </div>
+    </footer>
+
+    <!-- Local JS Link -->
+    <script src="script.js"></script>
+    <!-- Serega Specific JS -->
+    <script src="serega.js"></script>
+</body>
+</html>
